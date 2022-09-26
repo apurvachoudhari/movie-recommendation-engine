@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Recommendation Engine</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" />
+	
+</head>
+<body>
+	<div>
+	<h1>Movie Recommendation System</h1>
+	
+		<p1><span>ENTER A MOVIE NAME THAT YOU JUST WATCHED</span></p1>
+		
+			
+			<form name="passdata" action="/about" method="post">
+			 <div class="input">
+				<input type="text"	 name="moviename" autocomplete="off" onfocus="this.value=''" value="Enter a movie name">
+			 	<input type="submit" value="Submit">
+			</div>
+	</div>
+</form>
+</body>
+</html>

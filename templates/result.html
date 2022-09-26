@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/result.css') }}" />
+</head>
+<body>
+<div align="center">
+  <h1 align="center">Recommended movies for '{{moviename}}':</h1>
+  <div class="table">
+    {% for table in tables %}
+      <h2>{{titles[loop.index]}}</h2>
+      {{ table|safe }}
+    {% endfor %}
+</div>
+<p><a href="javascript:window.history.back();">Back</a></p>
+</div>
+</body>
+</html>
